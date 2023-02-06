@@ -46,7 +46,6 @@ a {
   color: var(--brand-color);
   text-decoration: none;
   text-transform: uppercase;
-  border: 1px solid red;
 }
 .logo-second {
   color: var(--heading-color);
@@ -54,7 +53,9 @@ a {
 .footer-logo-second {
   color: #f4f4fd;
 }
-
+.site-nav {
+  align-items: center;
+}
 .site-nav .nav-item a {
   font-weight: 500;
   font-size: 16px;
@@ -69,7 +70,6 @@ a {
 }
 .contact-list {
   display: flex;
-
   gap: 40px;
 }
 .contacts .contact a {
@@ -89,7 +89,8 @@ a {
   width: 1440px;
   height: 600px;
   background: var(--heading-color);
-  display: flex;
+  align-items: center;
+  padding: 188px 0px 188px 0px;
 }
 .hero-info {
   font-weight: 700;
@@ -98,6 +99,8 @@ a {
   text-align: center;
   letter-spacing: 0.02em;
   color: #ffffff;
+  max-width: 496px;
+  margin: 0 auto 48px;
 }
 .hero-btn {
   font-family: "Roboto";
@@ -115,6 +118,8 @@ a {
   border: 0;
   width: 169px;
   height: 56px;
+  margin: 0 auto;
+  display: block;
 }
 .hero-btn:hover {
   background-color: var(--press-color);

@@ -3,6 +3,9 @@ body {
   font-family: "Roboto", sans-serif;
   color: #2e2f42;
 }
+* {
+  box-sizing: border-box;
+}
 :root {
   --heading-color: #2e2f42;
   --text-color: #434455;
@@ -19,19 +22,22 @@ a {
   display: flex;
   width: 1440px;
   height: 72px;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0;
+  padding: 24px 156px 24px 156px;
 }
 .site-nav,
 .nav-items {
   display: flex;
 }
 .nav-items {
-  flex-direction: row;
-  align-items: flex-start;
-  padding: 0px;
+  padding: 0px 0px 0px 76px;
   gap: 40px;
 }
 .logo-first {
   font-family: "Raleway";
+
   font-style: normal;
   font-weight: 800;
   font-size: 18px;
@@ -40,6 +46,7 @@ a {
   color: var(--brand-color);
   text-decoration: none;
   text-transform: uppercase;
+  border: 1px solid red;
 }
 .logo-second {
   color: var(--heading-color);
@@ -60,6 +67,11 @@ a {
   color: var(--brand-color);
   text-decoration: underline;
 }
+.contact-list {
+  display: flex;
+
+  gap: 40px;
+}
 .contacts .contact a {
   font-family: "Roboto";
   font-style: normal;
@@ -77,6 +89,7 @@ a {
   width: 1440px;
   height: 600px;
   background: var(--heading-color);
+  display: flex;
 }
 .hero-info {
   font-weight: 700;
@@ -108,8 +121,16 @@ a {
   color: #ffffff;
 }
 .hide-h {
-  opacity: 0;
-  cursor: default;
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
 .advanteges-h {
   font-weight: 500;

@@ -37,8 +37,9 @@ a {
   display: flex;
 }
 .nav-items {
-  padding: 0px 0px 0px 76px;
+  padding: 0;
   gap: 40px;
+  margin: 0 0 0 76px;
 }
 .logo-first {
   font-family: "Raleway";

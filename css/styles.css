@@ -15,9 +15,23 @@ body {
 }
 ul {
   list-style-type: none;
+  margin: 0;
+  padding: 0;
 }
 a {
   text-decoration: none;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+img {
+  display: block;
 }
 .container {
   max-width: 1158px;
@@ -28,8 +42,11 @@ a {
   align-items: center;
   justify-content: space-between;
   display: flex;
-  padding: 24px 15px 24px 15px;
+  padding: 0 15px;
   height: 72px;
+}
+.page-header {
+  border-bottom: 1px solid #e7e9fc;
 }
 
 .site-nav,
@@ -37,7 +54,7 @@ a {
   display: flex;
 }
 .nav-items {
-  padding: 0;
+  padding: 24px 0;
   gap: 40px;
   margin: 0 0 0 76px;
 }
@@ -77,6 +94,8 @@ a {
 .contact-list {
   display: flex;
   gap: 40px;
+  padding: 24px 0;
+  margin: 0;
 }
 .contacts .contact a {
   font-family: "Roboto";
@@ -142,20 +161,19 @@ a {
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
-
+.container-advanteges {
+  padding: 120px 0;
+}
 .advanteges-h {
   font-weight: 500;
   font-size: 20px;
   line-height: 24px;
   letter-spacing: 0.02em;
   color: var(--heading-color);
-  margin: 0;
 }
 .advanteges-list {
   display: flex;
-  margin: 120px 0;
   justify-content: space-between;
-  padding: 0;
 }
 .advanteges-info {
   font-weight: 400;
@@ -166,7 +184,7 @@ a {
   margin: 8px 0 0 0;
 }
 .container-work {
-  margin-bottom: 120px;
+  padding: 0 0 120px 0;
 }
 .advanteges-box {
   width: 264px;
@@ -197,6 +215,7 @@ a {
   text-transform: capitalize;
   color: var(--heading-color);
 }
+
 .staff-h {
   font-weight: 700;
   font-size: 36px;
@@ -219,9 +238,10 @@ a {
     0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
   border-radius: 0px 0px 4px 4px;
   width: 264px;
-  height: 380px;
 }
-
+.info-staff {
+  padding: 32px 16px 32px 16px;
+}
 .staff-name {
   font-weight: 500;
   font-size: 20px;
@@ -229,7 +249,6 @@ a {
   letter-spacing: 0.02em;
   color: var(--heading-color);
   text-align: center;
-  margin: 32px auto 0 auto;
 }
 .staff-profession {
   font-weight: 400;
@@ -254,14 +273,21 @@ a {
   margin: 16px 0 0 0;
   max-width: 264px;
 }
+.container-btn {
+  padding: 96px 0 72px 0;
+}
+.info-work {
+  padding: 32px 0 32px 16px;
+}
 .work-name {
   font-weight: 500;
   font-size: 20px;
   line-height: 24px;
   letter-spacing: 0.02em;
   color: var(--heading-color);
-  margin: 32px 0 8px 16px;
+  margin-bottom: 8px;
 }
+
 .work-system {
   font-weight: 400;
   font-size: 16px;
@@ -269,13 +295,11 @@ a {
   letter-spacing: 0.02em;
   color: var(--text-color);
   text-decoration: none;
-  margin: 0 0 32px 16px;
 }
 .work-company {
   background: #ffffff;
   border: 1px solid #e7e9fc;
   width: 360px;
-  height: 420px;
 }
 .work-btn:hover {
   color: #ffffff;
@@ -306,7 +330,7 @@ a {
   align-items: center;
   justify-content: center;
   gap: 24px;
-  margin: 96px 0 72px 0;
+
   padding: 0;
 }
 .container-buttons {
@@ -318,11 +342,10 @@ a {
   /* flex-basis: calc((100% - 2 * 24px) / 3); */
   display: flex;
   flex-wrap: wrap;
-  gap: 24px;
+  column-gap: 24px;
+  row-gap: 48px;
 }
-.work-company {
-  margin-bottom: 24px;
-}
+
 .container-works-portfolio {
-  margin-bottom: 96px;
+  padding-bottom: 120px;
 }
